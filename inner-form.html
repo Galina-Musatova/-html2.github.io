@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программа</title>
+</head>
+<body class="page__body">
+    <header class="page-header">
+        <a class="page-header__logo">
+            <img class="page-header__logo__img" src="images/logo-mobile.svg" width="34" height="38" alt="Логотип-картинка">            
+        </a>
+        <a class="page-header__logo2 page-header__logo2--name" href="#">
+            <img class="page-header__logo__img" src="images/logo2.svg" width="101" height="18" alt="Логотип-название"> 
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site-list__item--active">
+                        <a>Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Каталог продукции</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Подбор программы</a>
+                    </li>
+                </ul>                
+            </div>
+        </nav>
+    </header>
+
+    <main class="inner-main">
+        <h1 class="inner-title">Подбор программы</h1>
+        <section class="profile">
+            <div class="profile__wrapper">
+                <div class="profile__desc">
+                    <p class="profile__desc__text">Заполните анкету, и мы подберем
+                        программу питания для вашего кота</p>
+                </div>
+                <div class="profile__form">
+                    <form class="profile__form__data" action="https://echo.htmlacademy.ru/" method="get">                        
+                        <ul class="form__data__list">
+                            <li class="form__data__item">
+                                <label for="name">ИМЯ:*</label>
+                                <input id="name" type="text" name="name-cat" placeholder="БАРСИК">                               
+                            </li>
+                            <li class="form__data__item">
+                                <label for="weight">Вес (кг):*</label>
+                                <input id="weight" type="text" name="weight-cat" placeholder="7">                               
+                            </li>
+                            <li class="form__data__item">
+                                <label for="age">Возраст (лет):</label>
+                                <input id="age" type="text" name="age-cat" placeholder="7">                               
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="profile__purpose">
+                    <form class="profile__purpose__data" action="https://echo.htmlacademy.ru/" method="get">                        
+                        <ul class="profile__purpose__list">
+                            <li class="profile__purpose__item">
+                                <label class="visually-hidden">
+                                    <input class="purpose__item__choose" type="radio" name="lose-weight" checked>
+                                    <span class="purpose__item__text">Похудение</span>
+                                </label>                               
+                            </li>
+                            <li class="profile__purpose__item">
+                                <label class="visually-hidden">
+                                    <input class="purpose__item__choose" type="radio" name="get-better">
+                                    <span class="purpose__item__text">Набор массы</span>
+                                </label>                               
+                            </li>
+                            <li class="profile__purpose__item">
+                                <label class="visually-hidden">
+                                    <input class="purpose__item__choose" type="radio" name="undecided">
+                                    <span class="purpose__item__text">Не знаю (нужен ваш совет)</span>
+                                </label>                               
+                            </li>                          
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-contacts">
+            <div class="profile-contacts__wrapper">
+                <h2 class="">Контактные данные
+                    <br>(владельца кота)</h2>
+                    <form class="profile-contacts__data" action="https://echo.htmlacademy.ru/" method="get">                        
+                        <ul class="profile-contacts__list">
+                            <li class="profile-contacts__item">
+                                <label for="e-mail">E-mail:*</label>
+                                <input id="e-mail" type="text" name="e-mail" placeholder="kuklachev@gmail.com">                                                             
+                            </li>                            
+                            <li class="profile-contacts__item">
+                                <label for="phone">Телефон:*</label>
+                                <input id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">                                                            
+                            </li>                          
+                        </ul>
+                    </form>
+            </div>            
+        </section>
+        <!--иконки-->
