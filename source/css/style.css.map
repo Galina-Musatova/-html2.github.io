@@ -1,1 +1,1 @@
-{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AACA;EACI,gBAAA;ACAJ","file":"style.css","sourcesContent":["// Начните писать стили здесь\r\nbody {\r\n    background: blue;\r\n}","body {\n  background: blue;\n}"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"style.css"}
