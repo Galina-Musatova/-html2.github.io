@@ -1,3 +1,5 @@
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -18,10 +20,10 @@
 
 
   .button {
-    background: var(--basic_green, #68B738);
+    box-sizing: border-box;
+    background: #68B738;
     text-decoration: none;
     color: var(--basic-white, #FFF);
-    text-align: center;
     font-family: Oswald;
     font-style: normal;
     text-transform: uppercase;
@@ -31,3 +33,5 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  

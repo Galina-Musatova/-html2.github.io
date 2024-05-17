@@ -30,6 +30,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
+    margin-top: 27px;
+    margin-bottom: 25px;
 }
 
 .programs__slogan {
@@ -40,13 +42,30 @@
     font-weight: 400;
     line-height: 14px; /* 100% */
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 29px;
+}
+
+.programs__background {
+    padding: 8px 44px;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    background: #68B738;
+    text-align: center;
 }
 
 .programs__button {
+    height: 26px;
     font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 128.571% */
+    line-height: 18px; /* 128.571% */    
 }
+
+.programs__button__desc {
+}
+
 
 .programs__item {
     padding-left: 20px;
@@ -58,6 +77,8 @@
 }
 
 .programs__item__title {
+    margin-left: 91px;
+    margin-top: 30px;
     color: #000;
     font-family: Oswald;
     font-size: 24px;
@@ -68,12 +89,13 @@
 }
 
 .programs__description {
+    margin-top: 29px;
     color: var(--special_dark-grey, #444);
     font-family: Arial;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 128.571% */
+    line-height: 18px;
 }
 
 .programs__link {
