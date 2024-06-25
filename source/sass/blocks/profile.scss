@@ -1,5 +1,42 @@
+.profile {
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (min-width: $tablet-width) {   
+        padding-left: 69px;
+        padding-right: 69px;
+    }
+    @media (min-width: $desktop-width) {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}
+
+.profile__form__inner-form {
+    @media (min-width: $desktop-width) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        column-gap: 80px;
+        margin-bottom: 49px;
+    }
+}
+
 .profile__form__purpose {
     padding-top: 22px;
+    @media (min-width: $tablet-width) {   
+        padding-top: 0;
+    }
+    @media (min-width: $desktop-width) {
+        height: 196px;
+        width: 100%;
+    }
+}
+
+.profile__form .line {
+    @media (min-width: $tablet-width) {   
+        display: none;
+    }
 }
 
 .profile__desc__text {
@@ -11,12 +48,21 @@
     font-weight: 400;
     line-height: 18px; /* 128.571% */
     text-transform: uppercase;
+    @media (min-width: $tablet-width) {   
+        width: 323px;        
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 66px;
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .profile__form__data__list {
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     list-style-type: none;
     color: var(--special_dark-grey, #444);
     font-family: Oswald;
@@ -25,6 +71,15 @@
     font-weight: 400;
     line-height: 18px; /* 112.5% */
     text-transform: uppercase;
+    @media (min-width: $tablet-width) {   
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 72px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
 }
 
 .profile__form__data__item {
@@ -41,12 +96,30 @@
         height: 45px;
         align-self: flex-end;
         padding-left: 16px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        @media (min-width: $tablet-width) {   
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        }
+        
+    }
+    @media (min-width: $tablet-width) {   
+        margin-bottom: 20px;
+    }
+    @media (min-width: $desktop-width) {
+        
     }
 }
 
 .profile__form__purpose__list {
     padding: 0;
     margin: 0;
+    margin-bottom: 20px;
     list-style-type: none;
     color: var(--special_dark-grey-2, #222);
     font-family: Oswald;
@@ -55,6 +128,17 @@
     font-weight: 400;
     line-height: 18px; /* 112.5% */
     text-transform: uppercase;
+    @media (min-width: $tablet-width) {   
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 28px;
+        padding-bottom: 25px;
+        margin-bottom: 71px;
+        border: 1px solid #E7E7E7;
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .type-radio {
@@ -68,6 +152,11 @@
     align-items: center;
     margin-right: 16px;
     margin-bottom: 13px;
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: normal;
+        margin-top: 25pxpx;
+    }
 }
 
 .profile__form-contacts__title {
@@ -79,12 +168,35 @@
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    @media (min-width: $tablet-width) {   
+        margin-top: 0;
+        margin-bottom: 76px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
+}
+
+
+.profile__form__contacts {
+    margin-top: 26px;
+    @media (min-width: $tablet-width) {   
+        
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .profile__form-contacts__list {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    @media (min-width: $tablet-width) {   
+        margin-bottom: 65px;
+    }
 }
 
 .profile__form-contacts__item {
@@ -97,12 +209,29 @@
     font-weight: 400;
     line-height: 18px; /* 112.5% */
     text-transform: uppercase;
+    align-items: center;
+    margin-bottom: 14px;
     input {
         height: 45px;
-        margin-bottom: 14px;
         padding-left: 15px;
         width: 100%;
         align-self: flex-end;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+    @media (min-width: $tablet-width) {   
+        font-size: 20px;
+        line-height: normal;
+        margin-bottom: 20px;
+        input {
+            font-size: 20px;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    @media (min-width: $desktop-width) {
+        
     }
 }
 
@@ -110,11 +239,23 @@
     margin-right: 11px;
     white-space: nowrap;
     align-self: center;
+    @media (min-width: $tablet-width) {   
+        
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .profile__form-contacts__label__phone {
     margin-right: 8px;
     align-self: center;
+    @media (min-width: $tablet-width) {   
+        
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .icon-email {
@@ -129,18 +270,33 @@
     top: 13px;
 }
 
+.profile__form__comments {
+    @media (min-width: $tablet-width) {
+   
+    }
+
+}
 
 .profile__form__comments__title {
     margin-top: 10px;
+    margin-bottom: 38px;
     font-family: Oswald;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px; 
+    @media (min-width: $tablet-width) {   
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 76px;
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .comments {
-    height: 150px;
+    min-height: 150px;
     width: 100%;
     padding-top: 9px;
     padding-left: 15px;
@@ -150,7 +306,21 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 112.5% */
-    text-transform: uppercase;
+    text-transform: uppercase;  
+    border: none;
+    outline: none;
+    @media (min-width: $tablet-width) {   
+        min-height: 174px;
+        font-size: 20px;
+        line-height: 30px;
+         border: 1px solid #E7E7E7;
+         padding-top: 10px;
+         padding-left: 19px;
+         margin-bottom: 65px;
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .profile__form__preferably__title {
@@ -163,12 +333,34 @@
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    @media (min-width: $tablet-width) {   
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 57px;
+    }
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .profile__form__preferably__list {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    @media (min-width: $tablet-width) {
+        display: grid;
+        min-width: 565px;
+        grid-template-columns: 221px 221px;
+        column-gap: 123px;
+        row-gap: 32px;
+        margin-bottom: 54px;
+
+        }
+        @media (min-width: $desktop-width) {
+            width: 100%;
+            grid-template-columns: 221px 221px 221px 221px;
+            column-gap: 105px;
+        }
 }
 
 .profile__form__preferably__item {
@@ -189,7 +381,24 @@
         font-weight: 400;
         line-height: 18px;
         text-transform: uppercase;
+        @media (min-width: $tablet-width) {   
+            font-size: 20px;
+            line-height: normal;
+            text-transform: uppercase;
     }
+    
+    @media (min-width: $desktop-width) {
+        
+    }
+}
+}
+
+.profile__form__order {
+        @media (min-width: $tablet-width) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 51px;
+        }
 }
 
 .profile__form__button {
@@ -197,6 +406,18 @@
     width: 100%;
     height: 40px;
     margin-bottom: 21px;
+     @media (min-width: $tablet-width) {   
+         width: 282px;
+         height: 52px;
+         margin-right: 61px;
+         font-size: 20px;
+        line-height: 0px; /* 0% */
+        text-transform: uppercase;
+        @media (min-width: $desktop-width) {
+        width: 568px;
+        margin-right: 81px;
+        }
+    }
 }
 
 .profile__form__button__explain {
@@ -208,4 +429,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+     @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 16px;
+     }
+     @media (min-width: $desktop-width) {
+        margin-left: 0;
+        }
 }
+

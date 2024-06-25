@@ -2,6 +2,20 @@
 .advantages__wrapper {
    padding-left: 20px;
    padding-right: 20px;
+
+   outline: 5px solid red;
+    outline-offset: -5px;
+   @media (min-width: $tablet-width) {   
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 90px;
+        
+   }
+    @media (min-width: $desktop-width) {   
+        padding-left: 110px;
+        padding-right: 110px;
+    
+    }   
 }
 
 .advantages__title {
@@ -14,21 +28,76 @@
     font-style: normal;
     font-weight: 400;
     line-height: 40px; 
+    @media (min-width: $tablet-width) {   
+        font-size: 60px;
+        line-height: 60px;
+        text-align: start;
+        }
+    @media (min-width: $desktop-width) {   
+        
+        
+    }   
 }
 
 .advantages__list {
     list-style-type: none;
-    li:not(:last-child) {
-            margin-bottom: 26px;
+    padding-left: 80px;
+    margin: 0;
+    li:not(:last-child) {            
+            margin-bottom: 26px;          
+        }
+        @media (min-width: $tablet-width) {   
+                display: grid;
+                grid-template-columns: auto auto;
+                column-gap: 137px;
+                row-gap: 37px;
+                padding-left: 0;  
+                li:not(:last-child) {            
+                    margin-bottom: 0;       
+        }
+    }
+        @media (min-width: $desktop-width) {   
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                column-gap: 95px;
+                padding-left: 0;
+        }   
 }
+
+.advantages__item {
+    
+    outline: 5px solid red;
+    outline-offset: -5px;
+
+    @media (min-width: $tablet-width) {   
+        min-height: 280px;
+
+    }
+    @media (min-width: $desktop-width) {   
+
+
+    }   
 }
 
 .advantages__description {
-    list-style-type: none;
+    
     color: var(--special_dark-grey, #444);
     font-family: Arial;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+    @media (min-width: $tablet-width) {   
+               margin-top: 151px; 
+               margin-bottom: 57px;
+               max-width: 245px;
+               color: var(--special_dark-grey, #444);
+                font-size: 16px;
+                line-height: 24px;
+            }
+    @media (min-width: $desktop-width) {   
+
+
+    }   
 }
+        
