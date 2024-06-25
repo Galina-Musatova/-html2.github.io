@@ -1278,6 +1278,9 @@ a {
     grid-template-columns: auto auto auto auto;
     column-gap: 80px;
     row-gap: 62px;
+    margin: auto;
+    max-width: auto;
+    min-width: 1000px;
     padding-left: auto;
     padding-right: auto;
   }
@@ -1301,6 +1304,7 @@ a {
 }
 @media (min-width: 1200px) {
   .products__item {
+    min-width: 180px;
     padding-top: 0;
     margin-bottom: 0;
   }
@@ -1706,7 +1710,7 @@ a {
 @media (min-width: 1200px) {
   .products-additional__parameter {
     text-align: start;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 144px 1fr;
     margin-top: auto;
     margin-bottom: auto;
   }
