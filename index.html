@@ -10,14 +10,16 @@
 </head>
 <body class="page__body">
     <header class="page-header">
-        <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--opened main-nav--nojs">   
+            <div class="page-header__wrapper">
             <img class="page-header__logo__img" src="source/img/logo-mobile.svg" width="34" height="38" alt="Логотип-картинка">
             <img class="page-header__logo__img" src="source/img/logo2.svg" width="101" height="18" alt="Логотип-название"> 
             <img class="page-header__logo__img__tablet" src="source/img/logo-tablet.svg" width="174" height="51" alt="Логотип-название"> 
             
-            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        </div>    
-        <nav class="main-nav">            
+            <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span>
+                
+             </div>    
+                 
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <div class="line"></div>
@@ -39,6 +41,24 @@
             </div>
         </nav>
     </header>
+
+    <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.page-header__toggle');
+        
+        navMain.classList.remove('main-nav--nojs');
+        
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+      </script>
+
     <main class="page-main">
         <h1 class="visually-hidden">Кэт энерджи</h1>
         <section class="programs">
@@ -47,13 +67,15 @@
                     <h2 class="programs__title">Функциональное
                         питание для котов</h2>
                         <p class="programs__slogan">Занялся собой? Займись котом!</p>
+                        <div class="programs__background-desktop">
+
                         <img class="programs__img" src="source/img/index-can-mobile1.png" width="280" height="270" alt="Продукт">
-                    
-                  <div class="programs__background">
-                <a class="programs__button button" href="#"><span class="programs__button__desc">Подобрать программу</span></a>
-            </div>       
+                        </div>
+                   <div class="programs__background">
+                        <a class="programs__button button" href="#"><span class="programs__button__desc">Подобрать программу</span></a>
+                   </div>       
                 </header>    
-                                   
+                <!--<div class="programs__background-desktop"></div>            -->  
             </div>
             
            

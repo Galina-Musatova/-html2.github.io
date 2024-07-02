@@ -20,8 +20,7 @@
        }
     @media (min-width: $desktop-width) {          
         padding-left: 110px;
-        padding-right: 110px; 
-        padding-bottom: 62px;
+        padding-right: 110px;  
     }   
 }
 
@@ -93,6 +92,9 @@
     @media (min-width: $tablet-width) {      
 
     }
+    @media (min-width: $desktop-width) {          
+      padding-top: 6px;
+    }   
 }
 
 .page-footer__logo {
@@ -106,6 +108,8 @@
             
     }
     @media (min-width: $desktop-width) {          
+        padding-bottom: 0;
+        margin-top: 59px;
         padding-bottom: 0;
     }   
     }

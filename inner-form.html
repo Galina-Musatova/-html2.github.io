@@ -8,18 +8,19 @@
 </head>
 <body class="page__body">
     <header class="page-header">
-        <div class="page-header__wrapper">
-            <img class="page-header__logo__img" src="source/img/logo-mobile.svg" width="34" height="38" alt="Логотип-картинка">
-            <img class="page-header__logo__img" src="source/img/logo2.svg" width="101" height="18" alt="Логотип-название"> 
-            <img class="page-header__logo__img__tablet" src="source/img/logo-tablet.svg" width="174" height="51" alt="Логотип-название"> 
-            
-            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        </div>    
-        <nav class="main-nav">            
+        <nav class="main-nav main-nav--opened main-nav--nojs">   
+            <div class="page-header__wrapper">
+                <img class="page-header__logo__img" src="source/img/logo-mobile.svg" width="34" height="38" alt="Логотип-картинка">
+                <img class="page-header__logo__img" src="source/img/logo2.svg" width="101" height="18" alt="Логотип-название"> 
+                <img class="page-header__logo__img__tablet" src="source/img/logo-tablet.svg" width="174" height="51" alt="Логотип-название"> 
+                
+                <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span>
+                
+            </div>    
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <div class="line"></div>
-                    <li class="site-list__item site-list__item--active">
+                    <li class="site-list__item">
                         
                         <a href="index.html">Главная</a>
                     </li>
@@ -29,7 +30,8 @@
                         <a href="catalog.html">Каталог продукции</a>
                     </li>
                     <div class="line"></div>
-                    <li class="site-list__item">
+
+                    <li class="site-list__item site-list__item--active">
                         
                         <a>Подбор программы</a>
                     </li>
@@ -37,6 +39,23 @@
             </div>
         </nav>
     </header>
+
+    <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.page-header__toggle');
+        
+        navMain.classList.remove('main-nav--nojs');
+        
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+      </script>
 
     <main class="inner-main">
         <h1 class="inner-title">Подбор программы</h1>
@@ -46,6 +65,7 @@
                     <p class="profile__desc__text">Заполните анкету, и мы подберем
                         программу питания для вашего кота</p>
                 </div>
+
                 <div class="profile__data">
                 <form class="profile__form" action="https://echo.htmlacademy.ru/" method="get">
 

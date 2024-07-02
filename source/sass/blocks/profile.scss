@@ -13,12 +13,16 @@
 }
 
 .profile__form__inner-form {
+    @media (min-width: $tablet-width) {
+        margin-bottom: 72px;
+    }
     @media (min-width: $desktop-width) {
         display: grid;
         width: 100%;
         grid-template-columns: auto auto;
         column-gap: 80px;
         margin-bottom: 49px;
+        margin-top: 1px;
     }
 }
 
@@ -100,11 +104,15 @@
         font-style: normal;
         font-weight: 400;
         line-height: 18px;
+        margin-left: 1px;
         @media (min-width: $tablet-width) {   
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        }
+        @media (min-width: $desktop-width) {
+            border: 1px solid #E7E7E7;
         }
         
     }
@@ -133,7 +141,7 @@
         padding-right: 30px;
         padding-left: 28px;
         padding-bottom: 25px;
-        margin-bottom: 71px;
+        margin-bottom: 75px;
         border: 1px solid #E7E7E7;
     }
     @media (min-width: $desktop-width) {
@@ -175,7 +183,8 @@
         line-height: 36px;
     }
     @media (min-width: $desktop-width) {
-        
+        margin-top: 69px;
+        margin-bottom: 56px;
     }
 }
 
@@ -196,6 +205,12 @@
     list-style-type: none;
     @media (min-width: $tablet-width) {   
         margin-bottom: 65px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 78px;
     }
 }
 
@@ -228,11 +243,15 @@
             font-size: 20px;
             line-height: normal;
             text-transform: uppercase;
+            padding-right: 0;
+            border: 1px solid var(--special_grey, #CDCDCD);
         }
     }
     @media (min-width: $desktop-width) {
-        
+        input {
+            max-width: 286px;
     }
+}
 }
 
 .profile__form-contacts__label__e-mail {
@@ -289,6 +308,7 @@
         font-size: 36px;
         line-height: 36px;
         margin-bottom: 76px;
+        margin-top: 65px;
     }
     @media (min-width: $desktop-width) {
         
@@ -317,6 +337,7 @@
          padding-top: 10px;
          padding-left: 19px;
          margin-bottom: 65px;
+         padding-left: 0;
     }
     @media (min-width: $desktop-width) {
         
@@ -337,6 +358,7 @@
         font-size: 36px;
         line-height: 36px;
         margin-bottom: 57px;
+        margin-top: 0;
     }
     @media (min-width: $desktop-width) {
         
@@ -350,16 +372,15 @@
     @media (min-width: $tablet-width) {
         display: grid;
         min-width: 565px;
-        grid-template-columns: 221px 221px;
-        column-gap: 123px;
+        grid-template-columns: 50% 50%;
         row-gap: 32px;
         margin-bottom: 54px;
 
         }
         @media (min-width: $desktop-width) {
             width: 100%;
-            grid-template-columns: 221px 221px 221px 221px;
-            column-gap: 105px;
+            grid-template-columns: 25% 25% 25% 25%;
+            column-gap: auto;
         }
 }
 
@@ -395,9 +416,10 @@
 
 .profile__form__order {
         @media (min-width: $tablet-width) {
-        display: flex;
-        align-items: center;
-        margin-bottom: 51px;
+        margin-bottom: 72px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+       
         }
 }
 
@@ -413,9 +435,9 @@
          font-size: 20px;
         line-height: 0px; /* 0% */
         text-transform: uppercase;
+        margin-bottom: 0;
         @media (min-width: $desktop-width) {
         width: 568px;
-        margin-right: 81px;
         }
     }
 }
@@ -432,6 +454,7 @@
      @media (min-width: $tablet-width) {
         font-size: 16px;
         line-height: 16px;
+        margin-left: 0;
      }
      @media (min-width: $desktop-width) {
         margin-left: 0;
