@@ -64,6 +64,7 @@
         <section class="programs">
             <div class="programs__wrapper">
                 <header class="programs__header">
+                    
                     <h2 class="programs__title">Функциональное
                         питание для котов</h2>
                         <p class="programs__slogan">Занялся собой? Займись котом!</p>
@@ -81,7 +82,7 @@
            
 
             <div class="programs__item__wrapper">
-            <div class="programs__item">
+            <div class="programs__item programs__item-one">
                    <!-- <img class="programs__item__image programs__item__image-right" src="source/img/cat_back.png" width="50" height="53" alt="Стройная кошка">
                --> 
                 <h3 class="programs__item__title">Похудение</h3>
@@ -96,7 +97,7 @@
                 
                 <!--<img class="programs__item__image programs__item__image-left" src="source/img/cat_back.png" width="200" height="211" alt="Стройная кошка">-->
             </div>
-            <div class="programs__item">
+            <div class="programs__item programs__item-two">
                 <!--<img class="programs__item__image programs__item__image-right" src="source/img/cat_back2.png" width="67" height="50" alt="Стройная кошка">
                 -->
                 <h3 class="programs__item__title">Набор массы</h3>
@@ -168,17 +169,22 @@
 
                 <div class="history__container-desktop-img">
                         <div class="history__img">
-                                    <img class="history__images history__images--fat" src="source\img\cat-fat.png" width="280" height="232" alt="Толстый кот">
-                                    <img class="history__images history__images--skinny" src="source/img/cat-skinny.png" width="280" height="232" alt="Стройный кот">
+                                    <img class="history__images history__images--fat" src="source/img/cat-fat.png" width="280" height="232" alt="Толстый кот">
+                                    <img class="history__images history__images--skinny" src="source/img/cat-skinny.png" width="300" height="232" alt="Стройный кот">
                         </div>
-                        <div class="history__range">
-                            <span class="history__range__before">было</span>
-                            <input type="range" class="form-range">
-                            <span class="history__range__after">стало</span>
+                        <div class="history__range range range--before">
+                            <button class="history__range__before" type="button">было</button>
+                            <div class="history__toggler">
+                                <input type="range" class="form-range" value="50" min="17" max="83">
+                            </div>
+                            <button class="history__range__after" type="button">стало</button>
                         </div>    
                 </div>
-            </div>            
-        </section>
+            </div>         
+          
+             </section>
+
+        
 
         <section class="contacts">
             <h2 class="visually-hidden">Контакты</h2>
