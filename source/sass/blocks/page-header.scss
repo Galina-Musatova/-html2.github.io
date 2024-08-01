@@ -73,6 +73,13 @@ $mobile-width-only: 767px;
         height: 59px;
         margin-right: 0;
         margin-top: 53px;
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.6;
+        }
         }  
     }
     

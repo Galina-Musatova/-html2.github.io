@@ -27,6 +27,18 @@
     font-family: Oswald;
     font-style: normal;
     text-transform: uppercase;
+    
+  }
+
+  .button:hover,
+  .button:focus {
+    background: #5EAA2F;
+  }
+
+  .button:active {
+    background: #5EAA2F;
+    span {opacity: 0.3;
+    }
   }
 
   a {
@@ -36,4 +48,77 @@
     
   }
 
+  input {
+    &:hover {
+        border: 1px solid var(--special_grey, #CDCDCD);
+    }
+    &:focus {
+        border: 2px solid var(--special_dark-grey, #444);
+    }
+    &:active {
+        border: 2px solid var(--status_error, #FF8282);
+    }
+  }
+
+  input[type='radio']:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    top: 5px;
+    left: 4px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    top: 5px;
+    left: 4px;
+    position: relative;
+    background-color: #68B738;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    
+}
+
+input[type="checkbox"] {
+    accent-color: white; /* Green color */
+    border: 2px solid #444;
+  }
+
+
+//Стилизациция ползунка в различных браузерах
+//вначале применим стили ко всем браузерам
+
+  input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+  }
   
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+  
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+  // стили ко всем браузерам закончили

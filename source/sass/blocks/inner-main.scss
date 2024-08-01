@@ -1,15 +1,15 @@
 .inner-main {
     margin-top: 0;
     padding-top: 27px;
-    @media (min-width: $tablet-width) {   
+    @media (min-width: $tablet-width) { 
         padding-top: 64px;
    }
     @media (min-width: $desktop-width) {
         padding-top: 73px;
     }
     
-outline: 5px solid red;
-    outline-offset: -5px;
+//outline: 5px solid red;
+   // outline-offset: -5px;
 }
 
 .inner-title {
@@ -36,7 +36,9 @@ outline: 5px solid red;
     @media (min-width: $desktop-width) {
         padding-left: 110px;
         padding-right: 110px;
+        margin-top: 0;
         
     }
    
 }
+

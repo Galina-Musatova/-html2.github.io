@@ -155,11 +155,38 @@
     margin-right: 16px;
 }
 
+
+.type-radio_active {
+    fill: var(--basic_green, #68B738);
+    &:hover {
+        stroke-width: 1px;
+stroke: #BABABA;        
+    }
+    &:focus {
+        stroke-width: 1px;
+        stroke: #BABABA;        
+    }
+    &:active {
+        
+    }
+}
+
 .profile__form__purpose__item {
     display: flex;
     align-items: center;
     margin-right: 16px;
     margin-bottom: 13px;
+    &:hover {
+        stroke-width: 1px;
+        stroke: #BABABA;
+    }
+    &:focus {
+        stroke-width: 1px;
+stroke: #BABABA;
+    }
+    &:active {
+        opacity: 0.3;
+    }
     @media (min-width: $tablet-width) {
         font-size: 20px;
         line-height: normal;
@@ -181,10 +208,12 @@
         margin-bottom: 76px;
         font-size: 36px;
         line-height: 36px;
+        width: 552px;
+        background-color: hsl(0, 0%, 100%);
     }
     @media (min-width: $desktop-width) {
         margin-top: 69px;
-        margin-bottom: 56px;
+        margin-bottom: 76px;
     }
 }
 
@@ -192,7 +221,7 @@
 .profile__form__contacts {
     margin-top: 26px;
     @media (min-width: $tablet-width) {   
-        
+        position: relative;
     }
     @media (min-width: $desktop-width) {
         
@@ -214,6 +243,22 @@
     }
 }
 
+.title__line__form {
+   
+    @media (min-width: $tablet-width) {
+        position: absolute;
+    height: 2px;
+    background: #68B738;
+    top: 24px;
+    right: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    @media (min-width: $desktop-width) {          
+        width: 100%;
+    }
+}
+
 .profile__form-contacts__item {
     display: flex;
     position: relative;
@@ -227,13 +272,14 @@
     align-items: center;
     margin-bottom: 14px;
     input {
-        height: 45px;
+        min-height: 45px;
         padding-left: 15px;
         width: 100%;
         align-self: flex-end;
         font-size: 16px;
         line-height: 18px;
         text-transform: uppercase;
+        flex-wrap: wrap;
     }
     @media (min-width: $tablet-width) {   
         font-size: 20px;
@@ -249,7 +295,7 @@
     }
     @media (min-width: $desktop-width) {
         input {
-            max-width: 286px;
+            
     }
 }
 }
@@ -258,6 +304,7 @@
     margin-right: 11px;
     white-space: nowrap;
     align-self: center;
+    flex-wrap: wrap;
     @media (min-width: $tablet-width) {   
         
     }
@@ -281,6 +328,7 @@
     position: absolute;
     right: 15px;
     top: 16px;
+    margin-left: 10px;
 }
 
 .icon-phone {
@@ -291,6 +339,7 @@
 
 .profile__form__comments {
     @media (min-width: $tablet-width) {
+        position: relative;
    
     }
 
@@ -309,6 +358,8 @@
         line-height: 36px;
         margin-bottom: 76px;
         margin-top: 65px;
+        width: 222px;
+        background-color: #ffffff;
     }
     @media (min-width: $desktop-width) {
         
@@ -344,6 +395,12 @@
     }
 }
 
+.profile__form__preferably {
+    @media (min-width: $tablet-width) {
+        position: relative;
+    }
+}
+
 .profile__form__preferably__title {
     margin-top: 23px;
     margin-bottom: 36px;
@@ -359,6 +416,8 @@
         line-height: 36px;
         margin-bottom: 57px;
         margin-top: 0;
+        width: 252px;
+        background-color: #ffffff;
     }
     @media (min-width: $desktop-width) {
         
@@ -421,6 +480,9 @@
         grid-template-columns: 50% 50%;
        
         }
+        @media (min-width: $desktop-width) {
+align-items: end;
+        }
 }
 
 .profile__form__button {
@@ -437,7 +499,8 @@
         text-transform: uppercase;
         margin-bottom: 0;
         @media (min-width: $desktop-width) {
-        width: 568px;
+        box-sizing: border-box;
+            width: auto;
         }
     }
 }
@@ -456,8 +519,8 @@
         line-height: 16px;
         margin-left: 0;
      }
-     @media (min-width: $desktop-width) {
-        margin-left: 0;
+     @media (min-width: $desktop-width) {    
+        
         }
 }
 
