@@ -28,6 +28,7 @@ $mobile-width-only: 767px;
    
     min-height: 302px;
     @media (min-width: $tablet-width) {
+        position: static;
         background-color: white;   
         background-image: none;
         box-shadow: none;
@@ -51,12 +52,13 @@ $mobile-width-only: 767px;
     margin-right: 20px;
     
     @media (min-width: $tablet-width) {
-        display: flexbox;
-        width: 100%;
+        position: relative;
+        display: flex;
         background-image: none;   
         box-shadow: none;     
         margin-left: 0;
         margin-right: 0;
+        align-items: start;
     }
     @media (min-width: $desktop-width) {
         display: flexbox;
@@ -76,6 +78,10 @@ $mobile-width-only: 767px;
 .programs__background-desktop {
     @media (min-width: $tablet-width) {
         margin-bottom: 0;
+        width: 100%;
+        order: 2;
+        margin-top: 0;
+
     }
     @media (min-width: $desktop-width) {
     position: absolute;
@@ -108,7 +114,7 @@ height: 694px;
         margin: 0;
         margin-top: 62px;
         margin-bottom: 41px;
-        margin-left: 117px;
+        margin-left: 87px;
         align-self: flex-start;
         text-align: left;
         font-size: 60px;
@@ -139,7 +145,7 @@ height: 694px;
         align-self: flex-start;
         text-align: left;
         color: #000;
-        margin-left: 117px;
+        margin-left: 87px;
         margin-bottom: 20px;
     }
     @media (min-width: $desktop-width) {
@@ -159,11 +165,11 @@ height: 694px;
     margin-left: 0;
     margin-right: 0;
     @media (min-width: $tablet-width) {
+        position: absolute;
         width: 244px;
         padding: 0;
-        position: absolute;
-        top: 295px;
-        left: 117px;
+        top: 292px;
+        left: 87px;
         background: none;
     }
     @media (min-width: $desktop-width) {

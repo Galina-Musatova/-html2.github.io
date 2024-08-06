@@ -86,6 +86,111 @@ input[type=checkbox] {
   border: 2px solid #444;
 }
 
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #DCDCDC;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16); /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 1px 3px #DCDCDC;
+  border: 1px solid #000000;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 1px 3px #DCDCDC;
+  border: 1px solid #000000;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #DCDCDC;
+  border-radius: 6px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #DCDCDC;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #DCDCDC;
+  border-radius: 6px;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #DCDCDC;
+  border-radius: 6px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #DCDCDC;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #DCDCDC;
+  border-radius: 6px;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #DCDCDC;
+}
+
 @font-face {
   font-family: Oswald;
   src: url("../fonts/oswaldmedium.woff") format("woff");
@@ -256,6 +361,7 @@ input[type=checkbox] {
 }
 @media (min-width: 768px) {
   .programs__wrapper {
+    position: static;
     background-color: white;
     background-image: none;
     box-shadow: none;
@@ -279,12 +385,13 @@ input[type=checkbox] {
 }
 @media (min-width: 768px) {
   .programs__header {
-    display: flexbox;
-    width: 100%;
+    position: relative;
+    display: flex;
     background-image: none;
     box-shadow: none;
     margin-left: 0;
     margin-right: 0;
+    align-items: start;
   }
 }
 @media (min-width: 1200px) {
@@ -304,6 +411,11 @@ input[type=checkbox] {
 @media (min-width: 768px) {
   .programs__background-desktop {
     margin-bottom: 0;
+    width: 100%;
+    order: 2;
+    margin-top: 0;
+    outline: 5px solid red;
+    outline-offset: -5px;
   }
 }
 @media (min-width: 1200px) {
@@ -338,7 +450,7 @@ input[type=checkbox] {
     margin: 0;
     margin-top: 62px;
     margin-bottom: 41px;
-    margin-left: 117px;
+    margin-left: 87px;
     align-self: flex-start;
     text-align: left;
     font-size: 60px;
@@ -373,7 +485,7 @@ input[type=checkbox] {
     align-self: flex-start;
     text-align: left;
     color: #000;
-    margin-left: 117px;
+    margin-left: 87px;
     margin-bottom: 20px;
   }
 }
@@ -397,11 +509,11 @@ input[type=checkbox] {
 }
 @media (min-width: 768px) {
   .programs__background {
+    position: absolute;
     width: 244px;
     padding: 0;
-    position: absolute;
-    top: 295px;
-    left: 117px;
+    top: 292px;
+    left: 87px;
     background: none;
   }
 }
@@ -695,7 +807,6 @@ input[type=checkbox] {
     height: 34px;
     margin-top: 42px;
     background-color: #ffffff;
-    flex-wrap: wrap;
   }
   .main-nav__list .line {
     display: none;
@@ -1081,13 +1192,14 @@ input[type=checkbox] {
 }
 
 .contacts {
-  width: 100%;
+  max-width: 100%;
 }
 @media (min-width: 1200px) {
   .contacts {
     position: relative;
     margin-top: 0;
     margin-bottom: 0;
+    height: 400px;
   }
 }
 
@@ -1236,10 +1348,18 @@ input[type=checkbox] {
 @media (min-width: 630px) {
   .contacts__map-images {
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     height: 400px;
   }
 }
+@media (min-width: 1200px) {
+  .contacts__map-images {
+    object-fit: cover;
+    max-width: 100%;
+    background-size: auto 400px;
+  }
+}
+
 .history {
   padding-left: 20px;
   padding-right: 20px;

@@ -122,3 +122,88 @@ input[type="checkbox"] {
     color: transparent;
   }
   // стили ко всем браузерам закончили
+
+
+  // укладка большого пальца
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #DCDCDC;;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16); /* Add cool effects to your sliders! */
+  }
+  
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 1px 3px #DCDCDC;;
+    border: 1px solid #000000;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 1px 3px #DCDCDC;;
+    border: 1px solid #000000;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  //стилизация дорожки:
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: #DCDCDC;
+    border-radius: 6px;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #DCDCDC;
+  }
+  
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: #DCDCDC;
+    border-radius: 6px;
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #DCDCDC;
+    border-radius: 6px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #DCDCDC;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #DCDCDC;
+    border-radius: 6px;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #DCDCDC;
+  }
+
+  // закончили стилизацию дорожки
