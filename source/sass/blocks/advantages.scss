@@ -22,7 +22,6 @@
     margin-top: 20px;
     margin-bottom: 40px;
     align-self: start;
-    text-align: center;
     font-family: Oswald;
     font-size: 36px;
     font-style: normal;
@@ -52,7 +51,7 @@
                 counter-reset: item1;  
                 display: grid;
                 grid-template-columns: auto auto;
-                column-gap: 137px;
+                column-gap: 57px;
                 row-gap: 37px;
                 padding-left: 0;  
                 li:not(:last-child) {            
@@ -63,7 +62,7 @@
         @media (min-width: $desktop-width) {   
                 display: grid;
                 grid-template-columns: auto auto auto auto;
-                column-gap: 95px;
+                column-gap: 80px;
                 padding-left: 0;
         }   
 }
@@ -91,7 +90,7 @@
         
     }
     @media (min-width: $desktop-width) {   
-
+        min-width: 246px;
 
     }   
 }
@@ -116,7 +115,7 @@
     }
     @media (min-width: $desktop-width) {   
         z-index: -1;
-
+        left: 120px;
     }   
 }
 

@@ -324,17 +324,32 @@ stroke: #BABABA;
     }
 }
 
+
+.profile__form-contacts__item:hover svg {
+    fill: #CDCDCD;
+}
+
+.profile__form-contacts__item:focus svg {    
+    fill: #444444;
+}
+
+.profile__form-contacts__item:active svg {    
+    fill: #FF8282;
+}
+
 .icon-email {
     position: absolute;
     right: 15px;
     top: 16px;
     margin-left: 10px;
+    
 }
 
 .icon-phone {
     position: absolute;
     right: 12px;
     top: 13px;
+    
 }
 
 .profile__form__comments {

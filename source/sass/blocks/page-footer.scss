@@ -7,8 +7,8 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: $lightgrey;
-    outline: 5px solid red;
-    outline-offset: -5px;
+    //outline: 5px solid red;
+    //outline-offset: -5px;
     @media (min-width: $tablet-width) {   
         display: flex;  
         justify-content: space-between;   
@@ -32,7 +32,7 @@
             padding-left: 0;
     }
  @media (min-width: $desktop-width) {          
- 
+    margin-top: 67px;
  }   
 }
 
@@ -64,6 +64,9 @@
         margin-top: 56px;
         min-height: 94px;
     }
+    @media (min-width: $desktop-width) {          
+        margin-top: 67px;
+    }   
 }
 
 .social__list {
@@ -112,6 +115,16 @@
     font-weight: 400;
     line-height: normal;
     margin-right: 22px;
+    &:hover {
+        color: rgba(104, 183, 56, 1);
+    }
+    &:focus,
+    &:active {
+        //filter: rgba(104, 183, 56, 1);
+        filter: hue-rotate(90deg);
+        color: rgba(104, 183, 56, 1);
+        opacity: 0.6;
+        }
     @media (min-width: $tablet-width) {      
 
     }
@@ -126,10 +139,7 @@
     justify-content: space-between;
     margin-top: 20px;
     padding-bottom: 32px;
-    &:active,
-    &:focus {
-        opacity: 0.3;
-    }
+    
     @media (min-width: $tablet-width) {           
             margin-top: 57px;
             padding: 0;
@@ -137,13 +147,37 @@
     }
     @media (min-width: $desktop-width) {          
         padding-bottom: 0;
-        margin-top: 59px;
+        margin-top: 67px;
         padding-bottom: 0;
     }   
     }
 
+    .page-footer__logo {
+        &:hover svg{
+            fill: rgba(104, 183, 56, 1);
+        }
+        &:active svg,
+        &:focus svg{
+            opacity: 0.3;
+            fill: rgba(104, 183, 56, 1);
+        }
+    }
+
+    .page-footer__academy__svg {
+        &:hover {
+            fill: rgba(104, 183, 56, 1);
+        }
+        &:active,
+        &:focus {
+            opacity: 0.3;
+            fill: rgba(104, 183, 56, 1);
+        }
+    }
+
     .logo-img {
         cursor: pointer;
+        margin-top: -5px;
+
         &:hover {
             filter: hue-rotate(90deg);
             //filter: rgba(104, 183, 56, 1);
@@ -153,7 +187,8 @@
             filter: hue-rotate(90deg);
             //filter: rgba(104, 183, 56, 1);
     }
-    }
+}
+    
 
     .instagram {
         @media (min-width: $tablet-width) {

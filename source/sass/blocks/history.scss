@@ -9,7 +9,7 @@
        // background-color: white;
     }
     @media (min-width: $desktop-width) {
-        margin-top: 26px;
+        margin-top: -65px;
         padding-left: 110px;
     padding-right: 110px;
     }
@@ -21,8 +21,8 @@
     margin-right: auto;
     width: 100%;
 
-    outline: 5px solid red;
-    outline-offset: -5px;
+    //outline: 5px solid red;
+    //outline-offset: -5px;
     @media (min-width: $tablet-width) {   
         
     }
@@ -35,7 +35,7 @@
 }
 
 .history__title {
-    margin-top: 53px;
+    margin-top: 50px;
     margin-bottom: 40px;
     padding-top: 25px;
     text-align: start;
@@ -73,8 +73,8 @@
         align-content: space-between;
         margin-bottom: 80px;
 
-        outline: 5px solid red;
-        outline-offset: -5px;
+        //outline: 5px solid red;
+        //outline-offset: -5px;
     }
     @media (min-width: $desktop-width) {
         display: flex;
@@ -130,7 +130,7 @@
    position: relative;
    margin-top: 0;
    min-width: 124px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
     @media (min-width: $tablet-width) {
         width: 162px;
@@ -155,13 +155,13 @@
     line-height: 24px; 
 
     border: 3px solid #CDCDCD;
-    padding-bottom: 18px;
+    padding-bottom: 10px;
     padding-top: 14px;
     @media (min-width: $tablet-width) {   
         font-size: 30px;
         line-height: 37px;
         padding-bottom: 20px;
-    padding-top: 15px;
+    padding-top: 10px;
     }
     @media (min-width: $desktop-width) {   
         
@@ -227,7 +227,14 @@
         margin-left: 0;
         margin-top: 60px;
         margin-bottom: 75px;
+        column-gap: 60px;
     }   
+}
+
+.history__spent-1 {
+    @media (min-width: $desktop-width) {
+        align-self: flex-end;
+    }
 }
 
 .history__background {
@@ -240,12 +247,13 @@
         height: 462px;
         width: 100%;
 
-        outline: 5px solid red;
-outline-offset: -5px;
+        //outline: 5px solid red;
+//outline-offset: -5px;
     }
     @media (min-width: $desktop-width) {
         top: 179px;
         background-color: #F2F2F2;
+        z-index: -1;
     }
 }
 
@@ -457,11 +465,17 @@ outline-offset: -5px;
     overflow: hidden;
     margin-bottom: 15px;
 
-    outline: 5px solid red;
-    outline-offset: -5px;
+    //outline: 5px solid red;
+    //outline-offset: -5px;
     @media (min-width: $tablet-width) {
         width: 592px;
         height: auto;
+        margin-top: -20px;
+        @media (min-resolution: 2dppx) {
+            background-image: url("source/img/image_cat_tablet@2x.jpg");
+            background-size: 592px auto;
+            margin-top: 0;
+          }
     }
 
     @media (min-width: $desktop-width) {
@@ -470,7 +484,7 @@ outline-offset: -5px;
 }
 
 
-.history__images--fat,
+//.history__images--fat,
 .history__images--skinny {
     position: absolute;
     box-sizing: border-box;
@@ -486,17 +500,21 @@ outline-offset: -5px;
     }
 }
 
+
+
 .history__images--fat-skinny {
     
         display: none;         
     
     @media (min-width: $tablet-width) {
         display: inline;
+        }
+
     }
     @media (min-width: $desktop-width) {
         
     }
-}
+
 
 .history__images:first-child {
     opacity: 1;
@@ -508,5 +526,15 @@ outline-offset: -5px;
     }
     @media (min-width: $desktop-width) {
         margin-left: 63px;
+    }
+}
+
+.history__images--fat {
+    display: inline;
+    @media (min-width: $tablet-width) {
+        display: none;        
+    }
+    @media (min-width: $desktop-width) {
+        display: none; 
     }
 }

@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="source/css/style.css">
    <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="source/favicon.ico"> <!--основная фавиконка-->
+   <link rel="icon" href="source/img/icon-32.svg" type="image/svg+xml"> <!--для формата svg-->
+   <!--<link rel="icon" href="sourcei/mg/icon-mobile.png">   
+   <link rel="manifest" href="./manifest/webmanifest">-->
+
+   <link rel="apple-touch-icon" href="source/img/icon-152.png"> <!--для aple 180*180-->
+   <link rel="icon" href="source/img/icon-desktop.png">
     <title>Кэт энерджи</title>
 </head>
 <body class="page__body">
@@ -70,8 +77,15 @@
                         <p class="programs__slogan">Занялся собой? Займись котом!</p>
                         <div class="programs__background-desktop">
 
-                        <img class="programs__img" src="source/img/index-can-mobile1.png" width="280" height="270" alt="Продукт">
-                        </div>
+                        <picture>
+                            <source media="(min-width: 768px)" type="image/webp" srcset="source\img\index-can-tablet 1.webp 1x, source\img\index-can-tablet 1@2x.webp 2x">
+                            <source type="image/webp" srcset="source/img/index-can-mobile1.webp 1x, source/img/index-can-mobile 1@2x.webp">
+                            <source media="(min-width: 1200px)" srcset="source/img/index-can-desktop.png 1x, source/img/index-can-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="source/img/index-can-tablet1.jpg 1x, source/img/index-can-tablet1@2x.jpg 2x">
+                        <img class="programs__img" src="source/img/index-can-mobile1.png" srcset="source/img/index-can-mobile 1@2x.jpg" width="280" height="270" alt="Продукт">
+                    </picture>
+                </div>
+
                    <div class="programs__background">
                         <a class="programs__button button" href="inner-form.html"><span class="programs__button__desc">Подобрать программу</span></a>
                    </div>       
@@ -87,7 +101,7 @@
                 <h3 class="programs__item__title">Похудение</h3>
                 <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>            
                 <div class="line"></div>            
-                    <a class="programs__link" href="#"><span class="programs__link__button">каталог slim</span>
+                    <a class="programs__link programs__link-slim" href="#"><span class="programs__link__button">каталог slim</span>
                         <svg class="further" xmlns="http://www.w3.org/2000/svg" width="32" height="12" viewBox="0 0 32 12" fill="none">
                             <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
                             <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
@@ -104,7 +118,7 @@
                 <h3 class="programs__item__title">Набор массы</h3>
                 <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>       
                 <div class="line"></div>                 
-                <a class="programs__link" href="#"><span class="programs__link__button">каталог pro</span>
+                <a class="programs__link programs__link-pro" href="#"><span class="programs__link__button">каталог pro</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" viewBox="0 0 32 12" fill="none">
                         <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
                         <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
@@ -165,16 +179,18 @@
                                             <dd class="history__description">затрачено времени</dd>                    
                                     </dl>
                                     </div>
-                                <span class="history__spent">Затраты на питание: 15 000 РУБ.</span>
+                                <p class="history__spent">Затраты на питание: 
+                                    <span class="history__spent-1">15 000 РУБ.</span></p>
                                 </div>
                        
                 </div>
 
                 <div class="history__container-desktop-img">
                         <div class="history__img">
+                            <source media="(min-width: 768px)" srcset="source/img/image_cat_tablet.png">
                                     <img class="history__images history__images--fat" src="source/img/cat-fat.png" width="280" height="232" alt="Толстый кот">
                                     <img class="history__images history__images--skinny" src="source/img/cat-skinny.png" width="300" height="232" alt="Стройный кот">
-                                    <img class="history__images history__images--fat-skinny" src="source/img/image_cat_tablet.png" width="592" height="511" alt="Толстый-Стройный кот">
+                                    <img class="history__images history__images--fat-skinny" src="source/img/image_cat_tablet.png" srcset="source\img\image_cat_tablet@2x.png" width="592" height="511" alt="Толстый-Стройный кот">
                         </div>
                         
                         <div class="history__range range range--after">
@@ -203,8 +219,12 @@
             </div>
 
             <div class="contacts__map">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="source/img/location-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="source/img/location-tablet.jpg">
                 <img class="contacts__map-images" src="source/img/location.png" alt="Карта расположения">
-            </div>
+            </picture>
+        </div>
             
         </section>
     </main>
