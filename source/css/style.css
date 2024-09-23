@@ -364,8 +364,10 @@ input[type=range]:focus::-ms-fill-upper {
     width: 50%;
     height: 694px;
     background-image: url("../img/index-background-desktop-2.png");
-    background-repeat: repeat;
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 300px 100px;
+    background-color: rgb(55, 90, 34);
     box-shadow: inset 0 0 0 1000px rgba(104, 183, 56, 0.85);
   }
 }
@@ -729,6 +731,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 500;
   line-height: 20px; /* 100% */
   text-transform: uppercase;
+  flex-wrap: wrap;
   position: absolute;
   z-index: 10;
   top: 66px;
@@ -807,6 +810,7 @@ input[type=range]:focus::-ms-fill-upper {
   margin-bottom: 24px;
   flex-wrap: wrap;
   text-align: center;
+  margin-right: 10px;
 }
 .site-list__item:hover {
   opacity: 0.6;
@@ -989,7 +993,9 @@ input[type=range]:focus::-ms-fill-upper {
 .advantages__list {
   list-style-type: none;
   padding-left: 0;
+  padding-right: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 .advantages__list li:not(:last-child) {
   margin-bottom: 20px;
@@ -1027,7 +1033,7 @@ input[type=range]:focus::-ms-fill-upper {
     display: block;
     position: relative;
     z-index: 0;
-    counter-increment: item0;
+    counter-increment: inherit;
     min-height: 280px;
     padding-left: 0;
   }
