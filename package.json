@@ -1,13 +1,14 @@
 {
-  "name": "kat-energy-2",
+  "name": "project",
   "private": true,
-  "description": "Личный проект «kat-energy-2» от HTML Academy",
+  "description": "Личный проект от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
-    "browser-sync": "2.27.7",
+    "browser-sync": "^2.27.7",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "postcss": "8.3.11",
@@ -39,10 +40,5 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module",
-  "dependencies": {
-    "-": "0.0.1",
-    "serve": "^14.2.3",
-    "static": "^2.0.0"
-  }
+  "type": "module"
 }
